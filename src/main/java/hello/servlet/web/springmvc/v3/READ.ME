@@ -1,0 +1,17 @@
+Controller
+
+    @RequestMapping("/new-form")
+    public ModelAndView newForm(){
+        return new ModelAndView("new-form");
+    }
+
+위의 코드(ModelAndView)가 Spring MVC에서는 아래와 같이 String으로 반환해도됨
+
+    @RequestMapping("/new-form")
+    public String newForm(){
+        return "new-form";
+    }
+
+@RequestParam 사용하기
+@GetMapping 사용하기
+@PostMapping 사용하기
